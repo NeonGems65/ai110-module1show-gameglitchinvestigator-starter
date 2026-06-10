@@ -5,8 +5,11 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+It seemed like a guessing game of numbers 
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+The hints were innacurate, it told me to go lower when the number was actually higher
+Also told me to go higher when the number was actually lower
 
 **Bug Reproduction Log**
 
@@ -14,9 +17,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| 1   |  correct or go higher  |   go lower              
+ 99   |   correct or go lower  |    go higher
+ one wrong answer | score of 65 | score of 55
 
 ---
 
