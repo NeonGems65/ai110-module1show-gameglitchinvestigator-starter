@@ -24,3 +24,19 @@ def check_guess(guess, secret):
 def update_score(current_score: int, outcome: str, attempt_number: int):
     """Update score based on outcome and attempt number."""
     raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
+
+
+def reset_game_state(secret):
+    """
+    Return a fresh game state for starting a new game.
+
+    The status MUST be reset to "playing" so a finished game ("won"/"lost")
+    does not block new guesses after the player clicks "New Game".
+    """
+    return {
+        "secret": secret,
+        "attempts": 0,
+        "status": "playing",
+        "score": 0,
+        "history": [],
+    }
